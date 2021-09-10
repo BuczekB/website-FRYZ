@@ -1,0 +1,259 @@
+
+@keyframes visibleHeading{
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    50%{
+        
+    }
+    0%{
+        transform: translateX(+7rem);
+        opacity: 0;
+    }
+}
+html,
+body {
+    height: 100vh;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    
+}
+
+
+.navTest{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.navTest a{
+    color: black;
+}
+#intro-main{
+    height: 100vh;
+    background: url(./img/bg-header.jpg)no-repeat left center fixed;
+}
+.navbar-nav a{
+    transition: linear .2s all;
+}
+.navbar-nav a:hover{
+ color: black;
+ font-size: 1.2rem;
+ font-weight: bold;
+}
+.heading-text{
+    text-transform: uppercase;
+    font-family: 'Otomanopee One', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: black 3px 3px;
+    font-size: 3rem;
+    animation: visibleHeading 2s;
+}
+.exitBox{
+    width: 100px;
+    height: 100px;
+    background-image: url(./img/gallery-1-1.jpg);
+   position: absolute;
+}
+.heading-btn{
+    
+    animation: visibleHeading 2s;
+}
+.heading-btn:hover{
+    color: black;
+    text-shadow: 0 0;
+    font-weight: bold;
+   
+}
+.heading-btn a{
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    text-shadow: 1px 1px black;
+    opacity: 1;
+    transition: ease-in-out .2s;
+}
+.heading-btn a:hover{
+    color: black;
+}
+
+
+
+
+
+
+#intro-list{
+    height: 120vh;
+    background: url(./img/bg-list-box.jpg)no-repeat left center;
+}
+.box-list{
+    
+    display: flex;
+    margin-top: 16%;
+}
+#intro-list li{
+    font-size: larger;
+    background: rgba(255, 255, 255, .5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+.box-test{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .7s;
+    opacity: 0;
+    
+}
+.box-test-close{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 5;
+    top: 5;
+    right: 5;
+    
+}
+.exit-one{
+    content: '';
+    width: 5px;
+    height: 22px;
+    background-color: black;
+    position: absolute;
+    top: 5;
+    right: 15;
+    transform: rotate(-45deg);
+    pointer-events: none;
+}
+.exit-two{
+    content: '';
+    width: 5px;
+    height: 22px;
+    background-color: black;
+    position: absolute;
+    top: 5;
+    right: 15;
+    transform: rotate(45deg);
+    pointer-events: none;
+}
+.box-test{
+    opacity: 1;
+    
+}
+.gallery-box{
+display: flex;
+justify-content: center;
+align-items: center;
+box-sizing: border-box;
+}
+
+.gallery-section-box{
+    position: relative;
+    
+}
+#contact{
+    font-family: 'Style Script', cursive;
+}
+.map{
+    height: 80vh;
+    box-sizing: border-box;
+}
+.contact-box{
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-box-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.contact-box-phoneMail{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+.contact-box-phoneMail i{
+    font-size: 40px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    
+}
+.contact-box-information{
+    display: flex;
+    flex-direction: column;
+}
+p{
+    margin: .2rem;
+}
+.full-img{
+    width: 1000px;
+    height: 1000px;
+    background-color: black;
+    z-index: 1000;
+}
+.box-test{
+    width: 75vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: none;
+}
+.box-test-on{
+    display: block;
+}
+.box-test-img{
+    width: 75vw;
+    height: 75vh;
+    border: 1px solid white;
+}
+.single-img{
+    cursor: pointer;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Style Script', cursive;
+}
+.logo a:first-child{
+    font-weight: bold;
+    letter-spacing: .3rem;
+}
+.logo a:last-child{
+    font-size: .9rem;
+}
+.footer{
+    width: 100vw;
+    height: 8vh;
+}
+.map-box{
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    
+    
+}
+
