@@ -1,0 +1,203 @@
+<div class="container first">
+                    <div class="row ">
+                        <div class="row-md-12">
+                            <ul class="list-group box-list  ">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Strzyżenie męskie
+                                    <span class="badge bg-light rounded-pill text-dark">25 zł - 30 zł</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Strzyżenie damskie
+                                    <span class="badge bg-light rounded-pill text-dark">40 zł - 60 zł</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Strzyżenie + modelowanie
+                                    <span class="badge bg-light rounded-pill text-dark">50 zł - 70 zł</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Baleyage
+                                    <span class="badge bg-light rounded-pill text-dark">110 zł - 150 zł</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Baleyage + Strzyżenie
+                                    <span class="badge bg-light rounded-pill text-dark">120 zł - 160 zł</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Baleyage + Strzyżenie + modelowanie
+                                    <span class="badge bg-light rounded-pill text-dark">130 zł - 200 zł</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Sombre
+                                    <span class="badge bg-light rounded-pill text-dark">160 zł</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Tonowanie
+                                    <span class="badge bg-light rounded-pill text-dark">100 zł</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Farba
+                                    <span class="badge bg-light rounded-pill text-dark">100 zł - 120 zł</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Farba + Strzyżenie
+                                    <span class="badge bg-light rounded-pill text-dark">110 zł - 130 zł</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Farba + modelowanie
+                                    <span class="badge bg-light rounded-pill text-dark">120 zł - 130 zł</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Farba + Strzyżenie + modelowanie
+                                    <span class="badge bg-light rounded-pill text-dark">130 zł - 150 zł</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Styling
+                                    <span class="badge bg-light rounded-pill text-dark">120 zł - 150 zł</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Loki, koki, fale
+                                    <span class="badge bg-light rounded-pill text-dark">100 zł - 180 zł</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Botox
+                                    <span class="badge bg-light rounded-pill text-dark">100 zł - 170 zł</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Ozon + ampułka
+                                    <span class="badge bg-light rounded-pill text-dark">50 zł - 70 zł</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Kreatyna
+                                    <span class="badge bg-light rounded-pill text-dark">200 zł - 450 zł</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="map" class="col-md-6 bg-light ">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1248.7882310697535!2d22.558996299485482!3d51.24529469142351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472257692513a4d1%3A0x65c7b0395000ee97!2sPrezydenta%20Gabriela%20Narutowicza%2025%2C%2020-400%20Lublin!5e0!3m2!1spl!2spl!4v1629300726243!5m2!1spl!2spl"
+                        class="map-box" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+
+                const gallerySizeImg = (e) => {
+
+    console.log(e.clientX);
+    const imgBox = e.target;
+    const imgAttribute = imgBox.getAttribute('data-original');
+
+    galleryFullImg.src = imgAttribute;
+
+
+
+    galleryFullImgBox.style.display = 'block';
+}
+
+gallery.addEventListener('click', gallerySizeImg);
+
+const visibleFullImg = () => {
+    galleryFullImgBox.style.display = 'none';
+
+}
+
+@media (max-width:767px){
+    .logo a{
+        font-size: .8rem;
+    }
+    #intro-main{
+        background: url(./img/bg-header-min.jpg)no-repeat  center fixed ;
+    }
+    .full-bg-priceList{
+        display: flex;
+        flex-direction: column;
+    }
+    .first{
+       position: relative; 
+       clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+       height: 50vh;
+    }
+    .secound{
+        position: relative; 
+        clip-path: polygon(0% 0, 0% 50%, 0% 100%, 100% 100%, 100% 50%, 100% 0);
+        height: 50vh;
+    }
+    .sk{
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: ease-in-out .2s;
+    }
+    .sf{
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: ease-in-out .2s;
+    }
+    .sk:hover{
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(1.1);
+    }
+    .sf:hover{
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(1.1);
+    }
+    .heading-box{
+      margin-top: 0;
+    }
+    .first{
+        background: url(./img/bg-list-box-5-min.jpg)no-repeat left ;
+    }
+    .contact-box{
+        font-size: .75rem;
+    }
+    .box-list-first{
+        
+        font-size: 0.7rem;
+   }
+   .listItem{
+    padding: .3rem;
+}
+}
+@media (min-width:768px){
+    .sk{
+    font-size: 1rem;
+    }
+    .sf{
+    font-size: 1rem;
+    }
+    
+    .box-list-first{
+        
+        font-size: .9rem;
+   }
+   .listItem{
+    padding: .3rem;
+}
+    
+
+@media (min-width:1024px){
+    .sk{
+    font-size: 1.4rem;
+    }
+    .sf{
+    font-size: 1.4rem;
+    }
+    
+   
+}
+@media (max-width:1280px){
+    .sk{
+    font-size: 1.6rem;
+    }
+    .sf{
+    font-size: 1.6rem;
+    }
+    #intro-main{
+        background: url(./img/bg-header-midle.jpg)no-repeat  center fixed ;
+    }
+}
